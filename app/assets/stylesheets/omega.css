@@ -1,0 +1,1456 @@
+html, body, div {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0; 
+  font-size: 100%; 
+  vertical-align: baseline; 
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0; 
+  font-size: 100%; 
+  vertical-align: baseline; 
+  font: inherit; 
+  font-weight: bold;
+}
+
+a, p, ul, ol, li, img, span, strong, em {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0; 
+  font-size: 100%; 
+  vertical-align: baseline; 
+  font: inherit;
+}
+
+table, tbody, tfoot, thead, tr, th, td {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0; 
+  font-size: 100%; 
+  vertical-align: baseline; 
+  font: inherit;
+}
+
+applet, object, iframe, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, font, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, caption, fieldset, form, label, legend {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0; 
+  font-size: 100%; 
+  vertical-align: baseline; 
+  font: inherit;
+}
+
+article, aside, figure, footer, header, hgroup, section {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0;
+  font-size: 100%; 
+  vertical-align: baseline; 
+  font: inherit;
+}
+
+canvas, details, embed, figcaption, menu, nav, output, ruby, summary, time, mark, audio, video {
+  margin: 0; 
+  padding: 0; 
+  border: 0; 
+  outline: 0; 
+  font-size: 100%; 
+  vertical-align: baseline; 
+  font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**
+ * This will display them grid elements as block rather than inline for mobile browsers 
+ * (essentially anything smaller than the narrow grid size, and media query declares. 
+ */
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10,
+.grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19,
+.grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Grid panels inside blocks need their margins negated. */
+.container-12 .block .omega-grid,
+.container-16 .block .omega-grid,
+.container-24 .block .omega-grid {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* Clearfix fix to prevent padding at bottom of page. FML */
+.clearfix:after {
+  font-size: 0;
+}
+
+/* Skip link styling */
+#skip-link {
+  left: 50%;
+  margin-left: -5.25em;
+  margin-top: 0;
+  position: absolute;
+  width: auto;
+  z-index: 50;
+}
+
+#skip-link a,
+#skip-link a:link,
+#skip-link a:visited {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: block;
+  padding: 1px 10px 2px 10px;
+  text-decoration: none;
+  -khtml-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -o-border-radius: 0 0 10px 10px;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+  outline: 0;
+}
+
+/* Give pagers and inline LI items simple styling without all the junk from core */
+.inline li,
+.tabs li,
+.breadcrumb li {
+  list-style: none;
+  display: inline;
+  margin-right: 0.5em;
+}
+
+.item-list li {
+  list-style: none;
+}
+
+.pager li {
+  display: inline;
+  margin-right: 0.25em;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.field-label-inline .field-label,
+.field-label-inline .field-items,
+.field-label-inline .field-item {
+  display: inline;
+}
+
+/* UI Consistency */
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  display: none;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  vertical-align: middle;
+}
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+  -webkit-appearance: none;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  border-radius: 11px;
+  background: #ddd url(http://www.studioilse.com/images/button.png) repeat-x;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  outline: 0;
+  overflow: visible;
+  padding: 3px 10px 4px;
+  text-shadow: #fff 0 1px 1px;
+  width: auto;
+  *padding-top: 2px; /* IE7 */
+  *padding-bottom: 0px; /* IE7 */
+}
+
+button {
+  *padding-top: 1px; /* IE7 */
+  *padding-bottom: 1px; /* IE7 */
+}
+
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  -webkit-appearance: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #848484 #c1c1c1 #e1e1e1;
+  color: #000;
+  outline: 0;
+  padding: 2px 3px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  height: 1.8em;
+  *padding-top: 2px; /* IE7 */
+  *padding-bottom: 1px; /* IE7 */
+  *height: auto; /* IE7 */
+}
+
+/* Separate rule for Firefox. Cannot stack with WebKit's. */
+input.placeholder_text,
+textarea.placeholder_text,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #888;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+  -moz-box-shadow: #06f 0 0 7px;
+  -webkit-box-shadow: #06f 0 0 7px;
+  box-shadow: #06f 0 0 7px;
+  z-index: 1; /* For Opera */
+}
+
+input[type="file"]:focus,
+input[type="file"]:active,
+input[type="radio"]:focus,
+input[type="radio"]:active,
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+select[disabled],
+textarea[disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="email"][disabled],
+input[type="month"][disabled],
+input[type="number"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
+input[type="week"][disabled] {
+  background-color: #eee;
+}
+
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] option,
+select[disabled] optgroup,
+textarea[disabled] {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  color: #888;
+  cursor: default;
+}
+
+textarea,
+select[size],
+select[multiple] {
+  height: auto;
+}
+
+/* Tweaks for Safari + Chrome. */
+@media (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    background-image: url(http://www.studioilse.com/images/select-arrow.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+  }
+
+  select[size],
+  select[multiple] {
+    background-image: none;
+    padding: 0;
+  }
+}
+
+textarea {
+  min-height: 40px;
+  overflow: auto;
+  resize: vertical;
+  width: 100%;
+}
+
+optgroup {
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* IE6 */
+.ie6-button,
+* html button {
+  background: #ddd url(http://www.studioilse.com/images/button.png) repeat-x;
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  padding: 2px 10px 0px;
+  overflow: visible;
+  width: auto;
+}
+
+* html button {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.ie6-input,
+* html textarea,
+* html select {
+  background: #fff;
+  border: 1px solid;
+  border-color: #848484 #c1c1c1 #e1e1e1;
+  color: #000;
+  padding: 2px 3px 1px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  vertical-align: top;
+}
+
+* html select {
+  margin-top: 1px;
+}
+
+.placeholder_text,
+.ie6-input-disabled,
+.ie6-button-disabled {
+  color: #888;
+}
+
+.ie6-input-disabled {
+  background: #eee;
+}
+
+body {
+  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
+}
+
+a:link, a:visited {
+  color: #0062A0;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #202124;
+  text-decoration: none;
+}
+
+a:active {
+  color: #202124;
+  text-decoration: none;
+  color: #000;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.05em;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* Make site titles the same size if it's an H1 (home) or H2 (internal) */
+h1.site-name,
+h2.site-name {
+  font-size: 36px;
+}
+
+/* Make it a bit smaller for block headers */
+h2.block-title {
+  font-size: 18px;
+  margin: 0;  
+}
+
+h2.node-title {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+ul ul,
+ol ol {
+  padding-top: 0.5em;
+}
+
+.node ol,
+.node ul {
+  padding-left: 1.2em;
+}
+
+.node ul.inline,
+.node ol.inline {
+  padding-left: 0;
+}
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol,
+ul, pre, table, address, fieldset {
+  margin-bottom: 20px;
+}
+
+dt, .admin h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+dd {
+  padding-left: 10px;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.logo-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.site-name-slogan {
+  float: left;
+}
+
+.site-name {
+  margin-top: 20px;
+}
+
+.site-name a {
+  text-decoration: none;
+}
+
+.site-name,
+.site-slogan {
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
+.site-slogan {
+  font-weight: normal;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  list-style: none;  
+}
+
+.form-actions input {
+  margin-right: 0.5em;
+}
+
+.form-actions input:hover {
+  background: #FFFFFF;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Pagers Positioning */
+.item-list .pager {
+  padding:0;
+  margin: 0;
+}
+
+.item-list .pager li,
+.item-list .pager ul li {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.item-list .pager {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  text-align: left;
+}
+
+.pager li a {
+  display: inline-block;
+}
+
+.pager li.pager-ellipsis,
+.pager li.pager-current,
+.pager li a {
+  padding:4px 8px;
+  text-decoration: none;
+}
+
+.pager li.pager-current {
+  padding:4px 8px;
+  font-weight: bold;
+}
+
+.pager li.pager-first a,
+.pager li.pager-previous a,
+.pager li.pager-next a,
+.pager li.pager-last a {
+  width: 50px;
+  text-align:center;
+  padding: 4px 0;
+}
+
+.pager li.pager-next {
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.pager li.pager-last,
+.pager li.pager-next.last {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 0;
+}
+
+/* Pagers color */
+.pager li.pager-ellipsis,
+.pager li.pager-current,
+.pager li a {
+  color:#1a1a1a;
+}
+
+.pager li {
+  border-right: 1px solid;
+  border-color: #ddd #bbb #999;
+  color: #333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  outline: 0;
+}
+
+.pager li.pager-current {
+  background: #ddd url(http://www.studioilse.com/images/button.png) repeat-x;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1a1a1a), color-stop(1, #5a5a5a));
+  background: -moz-linear-gradient(top center, #1a1a1a 0%, #5a5a5a 100%);
+  color: #FFF;
+  outline: 0;
+}
+
+.pager li.pager-next {
+  border-left: 1px solid;
+  border-color: #ddd #bbb #999;
+}
+
+.pager li a {
+  background: #ddd url(http://www.studioilse.com/images/button.png) repeat-x;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  cursor: pointer;
+}
+
+.pager li a:hover {
+  background:#FFF;
+  color:#454545;
+}
+
+/* Add default border radius to list items & links */
+.pager {
+  background:#ebebeb;
+  border:1px solid;
+  border-color: #ddd #bbb #999;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.pager li.first,
+.pager li.first a,
+.pager li.first a:hover {
+  border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+}
+
+.pager li.pager-last,
+.pager li.pager-last a,
+.pager li.pager-last a:hover {
+  border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+}
+
+table {
+  border: 1px solid #CCC;
+  width: 100%;
+}
+
+thead th, th {
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+td, th {
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+
+th a, th a:link, th a:visited {
+  text-decoration: none;
+}
+
+th a {
+  display: block;
+}
+
+th a img {
+  margin: 0 0 0 5px;
+}
+
+th.active {
+  background: #DDD;
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+/* Odd & Even Styles */
+tr.even td {
+  background: #F1F5FA;
+}
+
+tr.odd td {
+  background: #fff;
+}
+
+td.active {
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+tr.even td.active {
+  background: #e5e9ed;
+}
+
+tr.odd td.active {
+  background: #f2f2f2;
+}
+
+tr:hover td,
+tr.even:hover td.active,
+tr.odd:hover td.active {
+}
+
+td ul.links {
+  margin-bottom: 0;
+}
+
+.node-links ul li a,
+.comment-links ul li a {
+  text-transform: lowercase;
+  display: block;
+  float: left;
+  text-decoration: none;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  margin: 0 0.5em 0.5em 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  background: #ddd url(http://www.studioilse.com/images/button.png) repeat-x;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  outline: 0;
+  overflow: visible;
+  padding: 4px 10px 3px;
+  text-shadow: #fff 0 1px 1px;
+  width: auto;
+
+  /* IE7 */
+  *padding-top: 2px;
+  *padding-bottom: 0px;
+}
+
+.node-links ul li a:hover,
+.comment-links ul li a:hover {
+  background: #FFF;
+}
+
+.tips,
+.description {
+  font-size: 10px;
+  color: #6a6a6a;
+}
+
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@font-face {
+  font-family: 'std-medium';
+  src: url('http://www.studioilse.com/sites/all/fonts/Polaris_V2_Medium.eot');
+  src: local('â˜º'), url('http://www.studioilse.com/sites/all/fonts/Polaris_V2_Book.woff') format('woff'), url('http://www.studioilse.com/sites/all/fonts/Polaris_V2_Book.ttf') format('truetype'), url('/sites/all/fonts/Polaris_V2_Book.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'GalaxiePolarisBold';
+    src: url('http://www.studioilse.com/sites/all/fonts/polaris_v2_bold.eot');
+    src: url('http://www.studioilse.com/sites/all/fonts/polaris_v2_bold.eot') format('embedded-opentype'),
+         url('http://www.studioilse.com/sites/all/fonts/polaris_v2_bold.woff') format('woff'),
+         url('http://www.studioilse.com/sites/all/fonts/polaris_v2_bold.ttf') format('truetype'),
+         url('http://www.studioilse.com/sites/all/fonts/polaris_v2_bold.svgÆ’GalaxiePolarisBold') format('svg');
+}
+@font-face {
+    font-family: 'GalaxiePolarisLight';
+    src: url('http://www.studioilse.com/sites/all/fonts/polaris_v2_light.eot');
+    src: url('http://www.studioilse.com/sites/all/fonts/polaris_v2_light.eot') format('embedded-opentype'),
+         url('http://www.studioilse.com/sites/all/fonts/polaris_v2_light.woff') format('woff'),
+         url('http://www.studioilse.com/sites/all/fonts/polaris_v2_light.ttf') format('truetype'),
+         url('http://www.studioilse.com/sites/all/fonts/polaris_v2_light.svg#GalaxiePolarisLight') format('svg');
+}
+*:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+body{overflow-x:hidden !important;font-family: "std-medium";font-size: 13px;background: #FFF;}
+a img { border: none !important;outline:  none !important; }
+.ouralbum-container,
+.news-container{height: 100% !important;}
+ul.primary{border:none;}
+button, input[type="reset"], input[type="submit"], input[type="button"] {
+    outline: none !important;
+    -webkit-box-shadow:0px !important;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0px solid !important;
+    text-shadow: 0px !important;
+    width: auto;
+}
+.front{overflow: hidden;}
+/*#region-content, #zone-content{width: 100% !important;}
+.field-name-body{max-width: 960px;margin: 30px auto;position: relative;display: block;}*/
+/*.field-name-body{max-width: 550px;text-align: justify;}
+*/
+.loader{position: fixed;top:90px;left: 0;width: 100%;height: 100%;background: #FFF;display: block;z-index:300;}
+.loader img{width: 80px;height: auto;top:0;bottom: 0;left: 0;right: 0;margin:auto;position: fixed;}
+.parallax-container{position: relative;top:0px;left: 0px;background: #FFF;right:0px;margin:auto;width: 100%;}
+#section-header-container {
+    background: #FFFFFF;
+    position: fixed;
+    z-index: 99;
+    padding-bottom: 10px;
+    border-bottom: solid 0px #e8e8e8;
+}
+.logged-in #section-header-container{
+    top:79px;
+}
+.ouralbum-container #section-header-container {
+    background: rgba(255,255,255,0.90);
+}
+#body-container,
+#about-us-body-container{z-index: 97;height: 100%;padding-top:0px;background: #FFF;}
+#logo img {
+    height: auto;
+    margin: 10px 0 5px;
+    max-width: 154px;
+    width: 100%;
+}
+.field .field-label {
+    font-weight: normal;
+    text-transform: lowercase;
+}
+.breadcrumb, .mobile-menu{display: none;}
+.node-type-page .field-name-body #page-title,#page-title{display: none;}
+.field-name-body #page-title, .category-title,
+.field-name-field-about-us-body #page-title,
+.context-who-we-are #page-title
+{display: block;font-family: "GalaxiePolarisBold";font-size: 20px;color:black;text-transform: uppercase;font-weight: normal;float: left;width: 100%;padding: 0px;text-align: center;}
+.node-type-project h1#page-title{
+    text-align: center;
+    font-family: "GalaxiePolarisBold";
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0px 0px;
+    padding: 20px 0px;
+    font-weight: normal;
+    display: none;
+}
+#body-container h1#page-title {
+    color: #000000;
+    display: block;
+    font-family: "GalaxiePolarisBold";
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 auto 17px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+.category-title{width: 100%;margin-bottom: 20px;}
+.menu1 ul li.leaf {
+    border-right: 1px solid;
+    display: inline;
+    height: 26px;
+    list-style-image: url("http://www.studioilse.com/misc/menu-leaf.png");
+    list-style-type: none;
+    margin: 0 3px 0 0;
+    padding: 0 7px 0 0;
+}
+.menu1 ul li.last{border: none;}
+.menu1 a, .menu2 a{color:black;text-decoration: none;text-transform: lowercase;
+-moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;}
+.menu1 a:hover, .menu2 a:hover, li a.active{color: #CCC;}
+.menu2 {
+    float: right;
+    margin: 10px 0 5px;
+    right: 0;
+    vertical-align: middle;
+    width: 400px;
+}
+.menu2 ul.menu {
+    border: medium none;
+    list-style: none outside none;
+    text-align: right;
+}
+.menu2 ul li.leaf {
+    display: block;
+    list-style-image: none;
+    list-style-type: none;
+    margin:0px;}
+.mobile-menu-container ul li.leaf {
+    background: none repeat scroll 0 0 #CCCCCC;
+    display: table !important;
+    border-bottom: solid 1px white;
+    padding: 0;
+    height: 40px;
+}
+.node ol, .node ul{
+    padding-left: 0px;
+}
+.flexslider {
+    background: none repeat scroll 0 0 #FFF;
+    border: 0px solid #FFF;
+    border-radius: 0px;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+#zone-user-wrapper{max-width: 1252px;margin: 0 auto;position: relative;}
+#section-content{margin-top:74px;}
+.ouralbum-container #zone-content,
+.ouralbum-container #zone-content .region,
+.news-container #zone-content,
+.news-container #zone-content .region,
+ #zone-content,
+#zone-content .region{width: 100% !important;}
+#zone-content .region{margin: 0px !important;}
+.grid-item {
+    float: none;
+    position: relative;
+    width: 100%;
+    margin-right:0px;
+    margin:0px auto 30px;
+}
+.view-footer{
+    float: left;
+    margin: 20px auto;
+    padding: 20px;
+}
+.view-our-album{margin: 0 auto;position: relative;}
+.our-album{width: 100%;position: relative;margin: 0 auto;}
+.album-item{width: 100%}
+.album-item img{width:380px;height: auto;margin-bottom: 0px;}
+.views-field-field-project-cover,
+.views-field-field-news-image{padding: 10px;}
+.views-field-field-news-image{
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.views-field-field-pdf-cover-image img,
+.views-field-field-news-image img{
+    max-width: 250px;
+    display: table-cell;
+    vertical-align: middle;
+    margin:0 auto;
+}
+.grid-item img{width: 100%;height: auto;}
+.view-work, .view-news{padding:0px 20px;}
+.view-news .grid-item img{
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.view-news .grid-item img:hover{opacity: 0.5;}
+.view-work .views-field-title {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    border-top: 1px solid #999999;
+    color: #000000;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    padding-top: 20px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.view-work .views-field-title .field-content,
+.view-news .views-field-title .field-content{display: table;width:100%;height: 100%;text-align: center;}
+.view-work .views-field-title .field-content a,
+.view-news .views-field-title .field-content a{display: table-cell;vertical-align: middle;color:black;text-transform: uppercase;text-decoration: none;font-family:"std-medium";font-size: 16px;}
+.view-work .views-field-title:hover,
+.view-news .views-field-title:hover{opacity: 1;}
+.body-outer{
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    float: left;
+     -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    margin:20px auto;
+}
+/*.context-brand .field-name-body,
+.context-design .field-name-body,
+.context-interiorarchitecture .field-name-body{
+    display: none;
+}*/
+.field-name-body{
+    margin: 0 auto;  
+    padding-left: 30px; 
+}
+.view-work .field-name-body {
+    float: none;
+    margin: 0 auto;
+    width: auto;
+    display: block;
+    padding: 10px;
+    opacity: 1;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.view-work  .field-name-body .field-items{padding-right: 20px;}
+.node-type-project .field-name-body .field-items,
+.field-name-field-about-us-body .field-items {
+    float: left;
+    position: relative;
+    width: auto;
+    padding: 10px;
+}
+#otherprojects-container{display: none;}
+#body-container #otherprojects-container{
+    display: block;
+    margin-top: 0px;
+    padding: 0px 10px;
+    text-align: center;
+}
+.field-name-field-other-projects .field-items{float: none;width: auto;right: 0px;text-align: center;}
+.field-name-field-other-projects{text-align: center;max-width: 1145px;margin: 0 auto;position: relative;}
+.field-name-field-other-projects img{width: 40%;height: auto;}
+.field-name-field-other-projects .field-item{
+    display: inline-block;
+    text-align: left;
+    margin-right:10px;
+    margin-top:10px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+width: 80px;}
+.field-name-field-other-projects .field-item:hover{opacity: 0.8;}
+#otherprojects-container h2.node-title{display: none;}
+.field-name-field-other-projects img{width: 100%;height: auto;}
+.field-name-field-other-projects .field-label {
+    font-weight: normal;
+    margin: 0px auto;
+    padding-top: 0px;
+    text-align: center;
+    text-transform: lowercase;
+}
+.field-name-field-other-projects{text-align: center;}
+
+#section-header{
+    top: 0;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;}
+.view-work{margin: 0 auto;position: relative;}
+button, input[type="reset"], input[type="submit"], input[type="button"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    color: #333333;
+    cursor: pointer;
+    font: bold 12px/1.2 Arial,sans-serif;
+    outline: 0 none;
+    overflow: visible;
+    padding: 3px 10px 4px;
+    text-shadow: 0 1px 1px #FFF;
+    width: auto;
+}
+.vjs-default-skin .vjs-big-play-button {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 0;
+    bottom: 0;
+    box-shadow: none !important;
+    cursor: pointer !important;
+    display: block;
+    height: 100px;
+    left: 0;
+    margin: auto;
+    opacity: 0.95;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 100px;
+}
+.vjs-default-skin div.vjs-big-play-button span {
+    background: url("http://www.studioilse.com/sites/all/images/play.png") repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+    display: block;
+    height: 100px;
+    left: 0%;
+    margin:0px;
+    position: absolute;
+    top: 0%;
+    width: 100px;
+    z-index: 100;
+}
+.vjs-controls{display: none !important;}
+.flexslider .slides,
+.flexslider .slides li{height: 100% !important;}
+.flexslider .slides img{width: 100%;height: auto;}
+.flex-nav-container{top:0px;}
+.flex-active-slide{overflow: hidden;}
+.flex-direction-nav a:before,
+.flex-direction-nav a.flex-next:before{content: none;font-size: 0px;}
+.flex-direction-nav a.flex-next {
+    background: url("http://www.studioilse.com/sites/all/images/next.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 82px !important;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    right: 10px !important;
+    top: 0;
+    z-index: 10;
+    text-indent: 999999px;
+    margin-top:;
+}
+.flex-direction-nav a.flex-prev {
+    background: url("http://www.studioilse.com/sites/all/images/prev.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 82px !important;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    left: 10px !important;
+    top: 0;
+    z-index: 10;
+    text-indent: 999999px;
+}
+
+.mobile-menu-container{
+    background: none repeat scroll 0 0 #CCC;
+    color: #FFFFFF;
+    height: 100%;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    z-index: 500;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.open{
+    right: 0px;
+
+}
+.mobile-menu-link {
+    display: block;
+    float: right;
+    margin-top: -33px;
+    text-align: right;
+    position: relative;
+    cursor: pointer;
+}
+.mobile-menu-link img{height: 25px;width: auto;}
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+.menu1,
+.menu2{display: none;}
+.mobile-menu-container .menu1,
+.mobile-menu-container .menu2,
+.mobile-menu-container ul li.leaf{
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+    right: auto;
+}
+.mobile-menu-container .menu2{margin:0px;}
+.mobile-menu-container a{
+    font-family:"GalaxiePolarisBold";
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.mobile-menu-container a {
+    color: #FFFFFF !important;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.mobile-menu-container .mobile-menu{display: block;}
+.mobile-menu-container .mobile-menu li{display: block;padding: 20px;}
+.mobile-menu-container .mobile-menu a{color: white;}
+/***COLORBOX***/
+#colorbox{z-index: 150;}
+#cboxOverlay {
+    background: none repeat scroll 0 0 #FFF;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    opacity: 0.78;
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    width: 100%;
+    z-index: 100;
+}
+#cboxPrevious {
+    background: url("http://www.studioilse.com/sites/all/images/prev-slim-black.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    bottom: 0;
+    height: 146px;
+    left: 30px;
+    margin: -74px 0 0;
+    overflow: hidden;
+    position: fixed;
+    text-indent: -999999px;
+    top: 50%;
+    width: 89px;
+    outline: none;
+    border: none;
+}
+#cboxNext {
+    background: url("http://www.studioilse.com/sites/all/images/next-slim-black.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    border: medium none;
+    bottom: 0;
+    height: 146px;
+    right: 30px;
+    margin: -74px 0 0;
+    overflow: hidden;
+    position: fixed;
+    text-indent: -999999px;
+    top: 50%;
+    width: 89px;
+    outline: none;
+    border: none;
+}
+#cboxClose{display: none;}
+#cboxTitle {
+    color: #000000;
+    margin-top: 10px;
+}
+.cboxPhoto{max-width: 900px;height: auto !important;}
+.news-item{
+    width: 25%;
+}
+.our-album li {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    margin: 0px !important;
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+.our-album li img{width: 100%;height: auto;}
+.news-item .views-field-field-news-image,
+.news-item .views-field-title{
+    padding: 0px 20px;
+}
+.news-item img{width: 100%;height: auto;}
+.view-news{margin: 0 auto;}
+.pager{display: none;}
+#infscr-loading {
+    bottom: 0;
+    font-size: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 10000;
+}
+#infscr-loading  img{height: 100px;width: auto;}
+.pager-previous, .pager-current, .pager-next{display: none !important;}
+iframe.cboxIframe{height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+img.vjs-poster{
+    width: 100% !important;
+}
+/**
+NEW WHO WE ARE PAGE
+**/
+.context-who-we-are .field-name-body{
+    padding: 15px;
+}
+.who-we-are-container{
+    margin: 40px 0px;
+}
+.who-we-are-container .grid-item .field-content{
+    padding: 10px;
+}
+#lightbox2-overlay{
+    background: white !important;
+}
+#lightbox{
+}
+#imageDataContainer,
+#modalContainer,
+#outerImageContainer{
+    overflow: visible !important;
+    padding: 0px !important;
+}
+#imageDataContainer{/*width: 900px !important;height: auto !important;*/display: none !important;}
+#modalContainer,
+#outerImageContainer,
+object#qtboxMovie{width: 900px !important;height: 522px !important;
+-moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;}
+.left{
+display:block;
+width: auto;
+left: 0px;
+text-align: left;
+margin-bottom: 30px;
+}
+.left .left-content{max-width: 500px;}
+.right{
+display:block;
+width: auto;
+right: 0px;
+text-align: left;
+vertical-align: top;
+}
+.right .right-content{padding-right: 17px;}
+.right a{color: black;text-decoration: none;}
+div.views-field-field-about-us-video-cover .field-content a{
+    background: url(http://www.studioilse.com/sites/all/images/play.png) center center no-repeat black;
+    display: block;
+    background-size: 100px auto;
+}
+div.views-field-field-about-us-video-cover img{opacity: 0.6;}
+

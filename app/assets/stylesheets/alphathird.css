@@ -1,0 +1,693 @@
+/**
+*ZONE USER WIFULL WIDTH FIX
+**/
+#zone-user-wrapper,#zone-user{max-width: 100% !important;width: 100% !important;}
+#region-user-first, #region-user-second{width: 50% !important;margin: 0px !important;}
+#region-user-first .region-inner{padding-left:20px;}
+#region-user-second .region-inner{padding-right: 20px;}
+.node-type-project{overflow: hidden;}
+.menu2{float: right;right: 0px;width: 400px;}
+.context-who-we-are #page-title{display: none;}
+.mobile-menu-link{display: none;text-align: right;}
+.menu1,
+.menu2{display: block;}
+.parallax-container{position: fixed;top:0px;left: 0px;background: #e8e8e8;right:0px;margin:auto;width: 100%;}
+#logo img {
+    height: auto;
+    margin: 10px 0 5px;
+    max-width: 215px;
+    width: 100%;
+}
+#body-container,
+#about-us-body-container {
+/*    background: url(http://www.studioilse.com/sites/all/images/black-bg.png) repeat;
+*/  /*background-image:url("http://www.studioilse.com/sites/all/images/down-slim-black.png");
+    background-repeat:no-repeat;
+    background-position:30px 19px;
+    background-size:auto 22px;*/
+    background-color:rgba(255, 255, 255, 0.95);
+    opacity: 1;
+    bottom: 0;
+    float: none;
+    height: 400px !important;
+    z-index: 90;
+    left: 0;
+    padding: 20px;
+    position: fixed;
+    width: 400px;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    overflow: visible;
+    color: black;
+    z-index: 100;
+    cursor: pointer;
+}
+#body-container h1#page-title:after{
+    content: url("http://www.studioilse.com/sites/all/images/down-slim-black.png");
+    margin-left: 16px;
+    position: absolute;
+    top: 0px;
+    right: 6px;
+}
+#body-container.hide{
+    /*background-image:url("http://www.studioilse.com/sites/all/images/up-slim-black.png");
+    background-repeat:no-repeat;
+    background-position:scroll 30px 19px;
+    background-size:auto 22px;*/
+    background-color:rgba(255, 255, 255, 0.4);
+}
+#body-container.hide h1#page-title:after{
+    content:url("http://www.studioilse.com/sites/all/images/up-slim-black.png");
+    margin-left: 16px;
+    position: relative;
+    position: absolute;
+    top: 0px;
+    right: 6px;
+}
+.album-item{width: 20%;}
+.album-item img{
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    opacity: 1;
+}
+.album-item img:hover{opacity: 0.5;}
+.our-album li,
+.our-album .item-list ul {
+    margin-bottom: 0px !important;
+}
+.node-type-project .field-name-body{
+    max-height: 167px;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    margin-bottom: 10px;
+    padding: 0px;
+    scrollbar-base-color:       #CCCCCC;
+    scrollbar-arrow-color:      #000000;
+    scrollbar-track-color:      #999999;
+    scrollbar-3dlight-color:    #EEEEEE;
+    scrollbar-highlight-color:  #FFFFFF;
+    scrollbar-face-color:      #CCCCCC;
+    scrollbar-shadow-color:     #999999;
+    scrollbar-darkshadow-color: #666666;
+}
+
+#body-container.hide, #about-us-body-container.hide{bottom: -385px;}
+.flex-direction-nav{opacity: 1;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;transition: all .3s ease;}
+.flex-direction-nav.show{opacity: 1;}
+.menu2 {
+    float: right;
+    margin: 10px 0 5px;
+    right: 0;
+    vertical-align: middle;
+    width: 400px;
+}
+.field-name-body #page-title{padding: 10px 40px;background-color: none;}
+.view-work .views-field-title,
+.view-news .views-field-title{
+    border-top: none;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    height: 100%;
+    width: 100%;
+    color: black;
+    opacity: 0;
+    -webkit-transition: all .3s ease;-moz-transition: all .3s ease;transition: all .3s ease;
+}
+.node-type-project .field-name-body .field-items {
+    float: none;
+    position: relative;
+    right: 0px;
+    width: auto;
+}
+.node-type-project .field-name-body .field-name-field-description .field-items{
+    width: 100%;
+    float: none;
+    right: auto;
+}
+.view-footer{
+    float: none;
+    margin: 0px auto;
+    padding: 0px;
+}
+#section-content {
+    margin: 90px 0 0 !important;
+}
+#flexslider_views_slideshow_main_about_us_slideshow-block img{width: 100%;}
+.flex-nav-container {
+    background-color: #CCCCCC;
+    float: right;
+    left: 0px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+}
+.flexslider .slides img {
+    height: auto;
+    width: 100%;
+}
+.product-project-page .flexslider .slides img{
+    width: auto !important;
+    margin:0 auto !important;
+    position: relative;
+}
+.body-outer{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: relative;
+	left: 0px;
+	 -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.view-work .field-name-body {
+    float: left;
+    margin: 0 auto;
+    width: 25%;
+    display: block;
+    opacity: 1;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    padding: 0px;
+}
+.grid-item{
+    float: left;
+    position: relative;
+    width: 25%;
+    margin-right:0px;
+    margin-bottom:0px;
+}
+
+.body-outer:hover{bottom: 0px;}
+.product-project-page .flexslider .slides li{
+/*    background:#f3f3f3;
+*/}
+.flex-direction-nav a.flex-next {
+    background-image: url("http://www.studioilse.com/sites/all/images/next-slim.png") !important;
+    background-repeat:no-repeat;
+    background-position:scroll 0 0;
+    background-size:72px auto !important;
+    background-color:rgba(0, 0, 0, 0) !important;
+    cursor: pointer;
+    display: block;
+    height: 147px !important;
+    width: 64px;
+    margin-top:0px;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    top:50%;
+    margin-top: -74px;
+    right: 30px !important;
+    z-index: 100;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.product-project-page .flex-direction-nav a.flex-next{
+        background-image: url("http://www.studioilse.com/sites/all/images/next-slim-black.png") !important;
+        background-repeat:no-repeat;
+        background-position:0 0;
+        background-size:72px auto;
+        background-color:rgba(0, 0, 0, 0) !important;
+
+}
+.flex-direction-nav a.flex-prev {
+    background-image: url("http://www.studioilse.com/sites/all/images/prev-slim.png") !important;
+    background-repeat:no-repeat;
+    background-position:0 0;
+    background-size:72px auto;
+    background-color:rgba(0, 0, 0, 0) !important;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 147px !important;
+    width: 64px;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    left: 30px !important;
+    top: 0;
+    z-index: 100;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.product-project-page .flex-direction-nav a.flex-prev{
+        background: url("http://www.studioilse.com/sites/all/images/prev-slim-black.png") no-repeat scroll 0 0 / 72px auto  rgba(0, 0, 0, 0) !important;
+
+}
+#otherprojects-container h2.node-title{display: none;}
+.view-work .flex-direction-nav{padding: 0px;}
+.field-name-field-other-projects img{width: 80px;height: auto;}
+.field-name-field-other-projects .field-label {
+    font-weight: normal;
+    margin: 0px auto;
+    padding-top: 0px;
+    text-align: left;
+    text-transform: lowercase;
+}
+#body-container #otherprojects-container{
+    position: absolute;
+    bottom: 5px;
+}
+.field-name-field-other-projects{text-align: left;}
+/*.field-name-field-about-us-body #page-title
+{display: block;font-family: "GalaxiePolarisBold";font-size: 20px;color:black;text-transform: uppercase;font-weight: normal;float: left;width: 30%;}*/
+h1#page-title, .node-type-project h1#page-title{display: none;}
+.context-brand h1#page-title {
+    color: #000000;
+    display: block;
+    font-family: "GalaxiePolarisBold";
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    padding-left: 30px;
+    display: none;
+}
+#body-container h1#page-title {
+    display: block;
+    color:black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family:"std-medium";
+    font-size: 16px;
+    margin: 0 auto 17px;
+    padding: 0;
+    padding-left: 12px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+}
+.field-name-body{
+    margin: 20px auto 0px;
+    padding-left: 30px;
+    }
+/*.node-type-project h1#page-title{
+    font-family: "GalaxiePolarisLight";
+     background: url(http://www.studioilse.com/sites/all/images/black-bg.png) repeat;
+    border:none;
+    color: #FFFFFF;
+    display: block;
+    float: none;
+    font-size: 20px;
+    font-weight: normal;
+    height: auto;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: none;
+    top: 100px;
+    width: 300px;
+    z-index: 96;
+    cursor: pointer;
+}*/
+
+.category-title{
+display: block;font-family: "GalaxiePolarisBold";font-size: 20px;color:black;text-transform: uppercase;font-weight: normal;float: none;width: 30%;text-align: left;margin-top: 37px;}
+#close {
+     background: url(http://www.studioilse.com/sites/all/images/black-bg.png) repeat;
+    cursor: pointer;
+    display: block;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: -71px;
+    width: 78px;
+    z-index: 100;
+}
+#body-close {
+    cursor: pointer;
+    float: right;
+    padding: 0;
+    position: absolute;
+    text-align: right;
+    top: 8px;
+    width: 400px;
+    height: 36px;
+    z-index: 200;
+    background: none;
+}
+#body-close img {
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    width: 61px;
+     -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+#body-close img.rotate{
+transform:rotate(180deg);
+-ms-transform:rotate(180deg); /* IE 9 */
+-webkit-transform:rotate(180deg); /* Opera, Chrome, and Safari */
+}
+.field-name-field-other-projects .field-items{text-align: left;}
+.left{
+display:inline-block;
+width: 49.7%;
+left: 0px;
+text-align: left;
+margin-bottom: 0px;
+}
+.left .left-content{max-width: 500px;}
+.right{
+display:inline-block;
+width: 49%;
+right: 0px;
+text-align: right;
+vertical-align: top;
+}
+.right .right-content{padding-right: 17px;}
+
+/* This file will hold styles that are loaded using the same media query as the wide grid. */
+
+/*
+ * ==========================================================
+ * Grid
+ * ==========================================================
+ */
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, 
+.grid-11, .grid-12 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.push-1, .pull-1, .push-2, .pull-2, .push-3, .pull-3, .push-4, .pull-4,
+.push-5, .pull-5, .push-6, .pull-6, .push-7, .pull-7, .push-8, .pull-8,
+.push-9, .pull-9, .push-10, .pull-10, .push-11, .pull-11, .push-12, .pull-12 {
+  position: relative;
+}
+
+/*
+ * ==========================================================
+ * Alpha - Omega
+ * ==========================================================
+ */
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/*
+ * ==========================================================
+ * Container
+ * ==========================================================
+ */
+
+body {
+  min-width: 1200px;
+}
+
+.container-12 {
+  margin-left: auto;
+  margin-right: auto;
+ /* width: 1200px;*/
+ width: 1252px;
+}
+body.node-type-clients .container-12 {width: 1200px;}
+
+/*
+ * ==========================================================
+ * Columns
+ * ==========================================================
+ */
+
+.container-12 .grid-1 {
+  width: 80px;
+}
+
+.container-12 .grid-2 {
+  width: 180px;
+}
+
+.container-12 .grid-3 {
+  width: 280px;
+}
+
+.container-12 .grid-4 {
+  width: 380px;
+}
+
+.container-12 .grid-5 {
+  width: 480px;
+}
+
+.container-12 .grid-6 {
+  width: 580px;
+}
+
+.container-12 .grid-7 {
+  /*width: 680px;*/
+  width:732px;
+}
+
+.container-12 .grid-8 {
+  width: 780px;
+}
+
+.container-12 .grid-9 {
+  width: 880px;
+}
+
+.container-12 .grid-10 {
+  width: 980px;
+}
+
+.container-12 .grid-11 {
+  width: 1080px;
+}
+
+.container-12 .grid-12 {
+  /*width: 1180px;*/
+  width:1252px;
+}
+body.node-type-clients .container-12 {width: 1180px;}
+
+/*
+ * ==========================================================
+ * Prefix
+ * ==========================================================
+ */
+
+.container-12 .prefix-1 {
+  padding-left: 100px;
+}
+
+.container-12 .prefix-2 {
+  padding-left: 200px;
+}
+
+.container-12 .prefix-3 {
+  padding-left: 300px;
+}
+
+.container-12 .prefix-4 {
+  padding-left: 400px;
+}
+
+.container-12 .prefix-5 {
+  padding-left: 500px;
+}
+
+.container-12 .prefix-6 {
+  padding-left: 600px;
+}
+
+.container-12 .prefix-7 {
+  padding-left: 700px;
+}
+
+.container-12 .prefix-8 {
+  padding-left: 800px;
+}
+
+.container-12 .prefix-9 {
+  padding-left: 900px;
+}
+
+.container-12 .prefix-10 {
+  padding-left: 1000px;
+}
+
+.container-12 .prefix-11 {
+  padding-left: 1100px;
+}
+
+/*
+ * ==========================================================
+ * Suffix
+ * ==========================================================
+ */
+
+.container-12 .suffix-1 {
+  padding-right: 100px;
+}
+
+.container-12 .suffix-2 {
+  padding-right: 200px;
+}
+
+.container-12 .suffix-3 {
+  padding-right: 300px;
+}
+
+.container-12 .suffix-4 {
+  padding-right: 400px;
+}
+
+.container-12 .suffix-5 {
+  padding-right: 500px;
+}
+
+.container-12 .suffix-6 {
+  padding-right: 600px;
+}
+
+.container-12 .suffix-7 {
+  padding-right: 700px;
+}
+
+.container-12 .suffix-8 {
+  padding-right: 800px;
+}
+
+.container-12 .suffix-9 {
+  padding-right: 900px;
+}
+
+.container-12 .suffix-10 {
+  padding-right: 1000px;
+}
+
+.container-12 .suffix-11 {
+  padding-right: 1100px;
+}
+
+/*
+ * ==========================================================
+ * Push
+ * ==========================================================
+ */
+
+.container-12 .push-1 {
+  left: 100px;
+}
+
+.container-12 .push-2 {
+  left: 200px;
+}
+
+.container-12 .push-3 {
+  left: 300px;
+}
+
+.container-12 .push-4 {
+  left: 400px;
+}
+
+.container-12 .push-5 {
+  left: 500px;
+}
+
+.container-12 .push-6 {
+  left: 600px;
+}
+
+.container-12 .push-7 {
+  left: 700px;
+}
+
+.container-12 .push-8 {
+  left: 800px;
+}
+
+.container-12 .push-9 {
+  left: 900px;
+}
+
+.container-12 .push-10 {
+  left: 1000px;
+}
+
+.container-12 .push-11 {
+  left: 1100px;
+}
+
+/*
+ * ==========================================================
+ * Pull
+ * ==========================================================
+ */
+
+.container-12 .pull-1 {
+  left: -100px;
+}
+
+.container-12 .pull-2 {
+  left: -200px;
+}
+
+.container-12 .pull-3 {
+  left: -300px;
+}
+
+.container-12 .pull-4 {
+  left: -400px;
+}
+
+.container-12 .pull-5 {
+  left: -500px;
+}
+
+.container-12 .pull-6 {
+  left: -600px;
+}
+
+.container-12 .pull-7 {
+  left: -700px;
+}
+
+.container-12 .pull-8 {
+  left: -800px;
+}
+
+.container-12 .pull-9 {
+  left: -900px;
+}
+
+.container-12 .pull-10 {
+  left: -1000px;
+}
+
+.container-12 .pull-11 {
+  left: -1100px;
+}
+

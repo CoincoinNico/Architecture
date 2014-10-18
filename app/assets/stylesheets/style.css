@@ -1,0 +1,15 @@
+/*Header*/
+#zone-user {
+	margin-top: 1em;
+}
+
+#logo {
+	text-decoration: none;
+	font-size: 2.7em;
+	font-family: 'Pacifico', Helvetica, Sans-serif;
+	color: black;
+}
+
+.menu li a {
+	text-transform: uppercase;
+}
