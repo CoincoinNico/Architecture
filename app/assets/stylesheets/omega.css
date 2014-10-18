@@ -1226,7 +1226,6 @@ button, input[type="reset"], input[type="submit"], input[type="button"] {
     top: 0;
     z-index: 10;
     text-indent: 999999px;
-    margin-top:;
 }
 .flex-direction-nav a.flex-prev {
     background: url("http://www.studioilse.com/sites/all/images/prev.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
