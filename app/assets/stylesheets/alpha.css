@@ -2,7 +2,7 @@
 *ZONE USER WIFULL WIDTH FIX
 **/
 #zone-user-wrapper,#zone-user{max-width: 100% !important;width: 100% !important;}
-#region-user-first, #region-user-second{width: 50% !important;margin: 0px !important;}
+#region-user-first, #region-user-second{width: 50%;margin: 0px !important;}
 #region-user-first .region-inner{padding-left:20px;}
 #region-user-second .region-inner{padding-right: 20px;}
 .node-type-project{overflow: hidden;}

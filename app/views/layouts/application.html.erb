@@ -1,14 +1,115 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Soso</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="fr" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<head profile="http://www.w3.org/1999/xhtml/vocab">
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta property="og:site_name" content="TOMETSO" />
+		<meta property="og:type" content="website" />
+		<meta property="dcterms.type" content="Text" />
+		<meta property="og:url" content="http://www.tomeetso.com/" />
+		<meta property="dcterms.format" content="text/html" />
+		<link rel="shortcut icon" href="http://www.studioilse.com/sites/default/files/favicon%281%29.ico" type="image/vnd.microsoft.icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<meta property="og:image" content="http://www.studioilse.com/sites/default/files/styles/manual_crop/public/CH04_shny_10.jpg?itok=QW_wS9UB" />
+		<meta property="og:description" content="Thomas est architecte, et Sophie est designeuse et ensemble ils forment une équipe au talent reconnu en région parisienne." />
+		<meta name="description" content="Thomas est architecte, et Sophie est designeuse et ensemble ils forment une équipe au talent reconnu en région parisienne." />
+		<link rel="shortlink" href="http://www.tometso.com/" />
+		<link rel="canonical" href="http://www.tometsocom/" />
+		<meta property="dcterms.date" content="2014-06-04T12:52+00:00" />
+		<meta property="dcterms.title" content="TOMETSO" />
+		<meta about="/studioilse" property="sioc:num_replies" content="0" datatype="xsd:integer" />
+		<meta content="STUDIOILSE" about="/tometso" property="dc:title" />
+		<meta property="dcterms.identifier" content="http://www.tometso.com/" />
+		<meta property="dcterms.language" content="und" />
+		<meta property="og:title" content="Tom-et-So" />
+		<meta property="dcterms.creator" content="admin" />
+		<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+	  <title>Tom&So</title>
+	  <!-- Media All -->
+	  <link rel="stylesheet" type="text/css" href="/assets/base.css" media="all">
+	  <link rel="stylesheet" type="text/css" href="/assets/menu.css" media="all">
+	  <link rel="stylesheet" type="text/css" href="/assets/messages.css" media="all">
+	  <link rel="stylesheet" type="text/css" href="/assets/theme.css" media="all">
+	  
+	  <!-- Media Screen -->
+	  <link rel="stylesheet" type="text/css" href="/assets/slideshow.css" media="screen">
+	  <link rel="stylesheet" type="text/css" href="/assets/flexslider.css" media="screen">
 
-<%= yield %>
+	  <!-- Media All -->
+	  <link rel="stylesheet" type="text/css" href="/assets/comments.css" media="all">
+	  <link rel="stylesheet" type="text/css" href="/assets/field.css" media="all">
+	  <link rel="stylesheet" type="text/css" href="/assets/node.css" media="all">
+	  <link rel="stylesheet" type="text/css" href="/assets/search.css" media="all">
+	  <link rel="stylesheet" type="text/css" href="/assets/user.css" media="all">
+	  <link rel="stylesheet" type="text/css" href="/assets/view.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/assets/tools.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/assets/lightbox.css" media="all">
 
-</body>
+		<link rel="stylesheet" type="text/css" href="/assets/omega.css" media="all">
+
+		<!--[if (lt IE 9)&(!IEMobile)]>
+		<link rel="stylesheet" type="text/css" href="assets/ie.css" media="all">
+		<![endif]-->
+
+		<!--[if gte IE 9]><!-->
+		<link rel="stylesheet" type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)" href="/assets/alpha.css">
+		<!--<![endif]-->
+
+		<!--[if gte IE 9]><!-->
+		<link rel="stylesheet" type="text/css" href="/assets/alphabis.css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
+		<!--<![endif]-->
+
+		<!--[if gte IE 9]><!-->
+		<link rel="stylesheet" type="text/css" href="/assets/alphathird.css" media="all and (min-width: 1220px)">
+		<!--<![endif]-->
+
+
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pacifico" />
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/assets/style.css" media="all">
+		<link rel="stylesheet" type="text/css" href="/assets/stylemobile.css" media="screen">
+
+
+		<!-- JAVASCRIPT -->
+	  <script type="text/javascript" src="http://www.studioilse.com/misc/jquery.js?v=1.4.4"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/misc/jquery.once.js?v=1.2"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/misc/drupal.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/modules/views_slideshow/js/views_slideshow.js?v=1.0"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/libraries/flexslider/jquery.flexslider-min.js?v=1.8"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/libraries/colorbox/jquery.colorbox-min.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/modules/colorbox/js/colorbox.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/modules/colorbox/js/colorbox_load.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/modules/colorbox/js/colorbox_inline.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/modules/lightbox2/js/lightbox_video.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/modules/lightbox2/js/lightbox.js?1413572739"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/modules/flexslider/assets/js/flexslider.load.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/modules/flexslider/flexslider_views_slideshow/js/flexslider_views_slideshow.js?na76ee"></script>
+
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/themes/studioisle/js/jquery-ui.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/themes/studioisle/js/imagesloaded.min.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/themes/studioisle/js/layout.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/themes/studioisle/js/page.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/themes/studioisle/js/jquery.tools.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/themes/omega/omega/js/jquery.formalize.js?na76ee"></script>
+		<script type="text/javascript" src="http://www.studioilse.com/sites/all/themes/omega/omega/js/omega-mediaqueries.js?na76ee"></script>
+		<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+		jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"studioisle","theme_token":"OpBWuz0A8WbjXYSkxXdHcrgyY2Mk5ww512gRTsMcScQ","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/libraries\/flexslider\/jquery.flexslider-min.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox_inline.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox_video.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/flexslider\/assets\/js\/flexslider.load.js":1,"sites\/all\/modules\/flexslider\/flexslider_views_slideshow\/js\/flexslider_views_slideshow.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/themes\/studioisle\/js\/jquery-ui.js":1,"sites\/all\/themes\/studioisle\/js\/imagesloaded.min.js":1,"sites\/all\/themes\/studioisle\/js\/layout.js":1,"sites\/all\/themes\/studioisle\/js\/page.js":1,"sites\/all\/themes\/studioisle\/js\/jquery.tools.js":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"sites\/all\/libraries\/flexslider\/flexslider.css":1,"sites\/all\/modules\/flexslider\/assets\/css\/flexslider_img.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/themes\/studioisle\/perfect-scrollbar.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-visuals.css":1,"sites\/all\/themes\/studioisle\/css\/global.css":1,"ie::normal::sites\/all\/themes\/studioisle\/css\/studioisle-alpha-default.css":1,"ie::normal::sites\/all\/themes\/studioisle\/css\/studioisle-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::sites\/all\/themes\/studioisle\/css\/studioisle-alpha-default.css":1,"narrow::sites\/all\/themes\/studioisle\/css\/studioisle-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::sites\/all\/themes\/studioisle\/css\/studioisle-alpha-default.css":1,"normal::sites\/all\/themes\/studioisle\/css\/studioisle-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"wide::sites\/all\/themes\/studioisle\/css\/studioisle-alpha-default.css":1,"wide::sites\/all\/themes\/studioisle\/css\/studioisle-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-12.css":1}},"colorbox":{"transition":"none","speed":"500","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"","previous":"\u00ab Prev","next":"Next \u00bb","close":"","overlayClose":true,"maxWidth":"98%","maxHeight":"98%","initialWidth":"98%","initialHeight":"98%","fixed":true,"scrolling":false,"mobiledetect":true,"mobiledevicewidth":"480px"},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":1,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":1,"flvPlayer":"\/","flvFlashvars":""},"viewsSlideshow":{"homepage_slideshow-block":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","flexsliderViewsSlideshow","viewsSlideshowCycle"],"play":["viewsSlideshowControls","flexsliderViewsSlideshow","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","flexsliderViewsSlideshow","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"flexslider_views_slideshow":{"#flexslider_views_slideshow_main_homepage_slideshow-block":{"num_divs":4,"id_prefix":"#flexslider_views_slideshow_main_","vss_id":"homepage_slideshow-block","animation":"slide","animationDuration":600,"slideDirection":"horizontal","slideshow":1,"slideshowSpeed":5000,"animationLoop":1,"randomize":0,"slideToStart":0,"directionNav":1,"controlNav":0,"keyboardNav":0,"mousewheel":1,"prevText":"Previous","nextText":"Next","pausePlay":0,"pauseText":"Pause","playText":"Play","pauseOnAction":1,"controlsContainer":".flex-nav-container","manualControls":""}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+		//--><!]]>
+		</script>
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  	<%= csrf_meta_tags %>
+	</head>
+
+		<%= yield %>
+
 </html>

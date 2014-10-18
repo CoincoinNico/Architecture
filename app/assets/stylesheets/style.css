@@ -9,6 +9,8 @@
 	font-family: 'Pacifico', Helvetica, Sans-serif;
 	color: black;
 	letter-spacing: 0.2em;
+	display: inline-block;
+
 }
 
 .menu li a {
