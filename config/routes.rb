@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'a-propos' => 'pages#about', as: :about
   get 'projets' => 'projects#index', as: :projects
   get 'projets/fabre' => 'projects#fabre', as: :fabre
+  get 'projets/fabre/travaux' => 'projects#fabreBefore', as: :fabreBefore
   get 'projets/rue-de-babylone' => 'projects#rb', as: :rb
   get 'projets/petites-ecuries' => 'projects#pe', as: :pe
   get 'projets/saint-nom-la-breteche' => 'projects#snln', as: :snlb

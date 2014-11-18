@@ -49,6 +49,14 @@ body {
 	font-size: 1.5em !important;
 	margin-bottom: 5px;
 }
+.field-empty {
+	border: 1px solid black;
+}
+.before-after a {
+	font-size: 1.5em !important;
+	text-decoration: none;
+	font-style: uppercase;
+}
 
 .imageProject {
 	background: no-repeat center;
@@ -75,4 +83,7 @@ body {
 }
 
 #fifthProject {
+}
+#bottom-picture {
+	top: 0px;
 }

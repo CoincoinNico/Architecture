@@ -5,6 +5,9 @@ class ProjectsController < ApplicationController
   def fabre
   end
 
+  def fabreBefore
+  end
+
   def rb
   end
 
