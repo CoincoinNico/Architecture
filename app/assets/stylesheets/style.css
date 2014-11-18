@@ -87,3 +87,22 @@ body {
 #bottom-picture {
 	top: 0px;
 }
+
+/*CONTACT*/
+
+.contact {
+	margin-top: -100px;
+	background: url(https://s3-eu-west-1.amazonaws.com/tomso/Rue+Babylone/rsz_contact_plan_texte_mini.jpg) top left	 no-repeat;
+	background-size: cover;
+	min-height: 660px !important;
+	z-index: 0 !important;
+}
+
+.contact-details {
+	margin-left: 30px;
+	margin-top: 100px;
+}
+
+.contact-details h1, .contact-details h2 {
+	letter-spacing: 0.2em;
+}
