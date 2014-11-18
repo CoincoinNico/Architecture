@@ -3,5 +3,10 @@
   #region-user-first {
 		width: 90%;
 	}
+
+	.col-6 {
+		display: inline-block;
+		width: 100%;
+	}
 }
 

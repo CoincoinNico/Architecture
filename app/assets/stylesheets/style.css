@@ -109,33 +109,59 @@ body {
 
 /*ABOUT*/
 .testNico {
-	width: 100%;
-	display: block;
+	margin-top: 200px;
 }
 .who-we-are {
 	text-align: justify;
-	font-size: 1.7em !important;
+	font-size: 1.6em !important;
 	display: inline-block;
 	line-height: 1.4em;
 	letter-spacing: 0.1em;
-	width: 80%;
-	margin-left: auto !important;
-  margin-right: auto !important;
+	margin-left: 20%;
+  margin-right: 20%;
+}
+.who-we-are-text {
+	text-align: justify;
+	line-height: 1.4em;
+	letter-spacing: 0.1em;
+	margin-top: 20px;
+}
+.about {
+	width: 100%;
 }
 
 .row {
 	display: inline-block;
 	width: 100%;
 }
-.col-6 {
-	display: inline-block;
-	width: 49%;
+@media screen and (min-width: 1000px)
+{
+	.col-6 {
+		display: inline-block;
+		width: 49%;
+	}
+	.col-left {
+		text-align: left;
+	}
+	.col-right {
+		text-align: right;
+	}
+
 }
-.col-left {
-	text-align: left;
-}
-.col-right {
-	text-align: right;
+@media screen and (max-width: 1000px)
+{
+	.col-6 {
+		display: inline-block;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.col-left {
+		text-align: center;
+	}
+	.col-right {
+		text-align: center;
+	}
+
 }
 .col-6 p {
 	margin-bottom: 2px !important;
