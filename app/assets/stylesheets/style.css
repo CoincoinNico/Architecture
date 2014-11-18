@@ -106,3 +106,37 @@ body {
 .contact-details h1, .contact-details h2 {
 	letter-spacing: 0.2em;
 }
+
+/*ABOUT*/
+.testNico {
+	width: 100%;
+	display: block;
+}
+.who-we-are {
+	text-align: justify;
+	font-size: 1.7em !important;
+	display: inline-block;
+	line-height: 1.4em;
+	letter-spacing: 0.1em;
+	width: 80%;
+	margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.row {
+	display: inline-block;
+	width: 100%;
+}
+.col-6 {
+	display: inline-block;
+	width: 49%;
+}
+.col-left {
+	text-align: left;
+}
+.col-right {
+	text-align: right;
+}
+.col-6 p {
+	margin-bottom: 2px !important;
+}
