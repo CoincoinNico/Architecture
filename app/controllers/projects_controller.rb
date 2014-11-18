@@ -11,6 +11,9 @@ class ProjectsController < ApplicationController
   def rb
   end
 
+  def rbBefore
+  end
+
   def pe
   end
 

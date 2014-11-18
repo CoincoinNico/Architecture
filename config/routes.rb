@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'projets/fabre' => 'projects#fabre', as: :fabre
   get 'projets/fabre/travaux' => 'projects#fabreBefore', as: :fabreBefore
   get 'projets/rue-de-babylone' => 'projects#rb', as: :rb
+  get 'projets/rue-de-babylone/travaux' => 'projects#rbBefore', as: :rbBefore
   get 'projets/petites-ecuries' => 'projects#pe', as: :pe
   get 'projets/saint-nom-la-breteche' => 'projects#snln', as: :snlb
   get 'projets/serignan-du-comtat' => 'projects#sdc', as: :sdc
