@@ -1,3 +1,8 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
 /*Header*/
 #zone-user {
 	margin-top: 1em;
@@ -6,13 +11,68 @@
 #logo {
 	text-decoration: none;
 	font-size: 2.7em;
-	font-family: 'Pacifico', Helvetica, Sans-serif;
 	color: black;
 	letter-spacing: 0.2em;
 	display: inline-block;
+}
 
+#logo img {
+	max-width: 500px !important;
+	width: 370px !important;
+}
+
+.menu1 {
+	margin-left: 84px;
+}
+
+#page-title {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	font-size: 2.2em !important; 
+}
+
+#page-and {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.emph {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
 }
 
 .menu li a {
 	text-transform: uppercase;
+}
+
+.field-content a {
+	font-size: 2em !important;
+}
+.field-item p {
+	font-size: 1.5em !important;
+	margin-bottom: 5px;
+}
+
+.imageProject {
+	background: no-repeat center;
+	background-size: cover;
+}
+
+.progress {
+	display: inline;
+}
+
+#firstProject {
+	background-image: url(https://s3-eu-west-1.amazonaws.com/tomso/5_mini.jpg);
+}
+
+#secondProject {
+	background-image: url(https://s3-eu-west-1.amazonaws.com/tomso/Pictures/1.jpg);
+}
+
+#thirdProject {
+	background-image: url(https://s3-eu-west-1.amazonaws.com/tomso/PE.jpg);
+}
+
+#fourthProject {
+}
+
+#fifthProject {
 }

@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
   root 'pages#home'
+  get 'contact' => 'pages#contact', as: :contact
+  get 'a-propos' => 'pages#about', as: :about
   get 'projets' => 'projects#index', as: :projects
   get 'projets/fabre' => 'projects#fabre', as: :fabre
+  get 'projets/rue-de-babylone' => 'projects#rb', as: :rb
+  get 'projets/petites-ecuries' => 'projects#pe', as: :pe
+  get 'projets/saint-nom-la-breteche' => 'projects#snln', as: :snlb
+  get 'projets/serignan-du-comtat' => 'projects#sdc', as: :sdc
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
