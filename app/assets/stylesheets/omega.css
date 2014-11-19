@@ -1078,7 +1078,8 @@ button, input[type="reset"], input[type="submit"], input[type="button"] {
 .view-work .views-field-title .field-content a,
 .view-news .views-field-title .field-content a{display: table-cell;vertical-align: middle;color:black;text-transform: uppercase;text-decoration: none;font-family:"std-medium";font-size: 16px;}
 .view-work .views-field-title:hover,
-.view-news .views-field-title:hover{opacity: 1;}
+.view-news .views-field-title:hover,
+.view-work .in-progress{opacity: 1 !important;}
 .body-outer{
     width: 100%;
     background-color: #FFF;

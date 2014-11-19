@@ -19,10 +19,13 @@ body {
 #logo img {
 	max-width: 500px !important;
 	width: 300px !important;
+	margin: 0px;
 }
 
 .menu1 {
 	margin-left: 18px;
+	margin-top: 10px;
+	font-size: 1em;
 }
 
 #page-title {
@@ -123,8 +126,6 @@ body {
 	display: inline-block;
 	line-height: 1.4em;
 	letter-spacing: 0.1em;
-	margin-left: 30%;
-  margin-right: 30%;
 }
 .who-we-are-text {
 	text-align: justify;
@@ -153,7 +154,10 @@ body {
 	.col-right {
 		text-align: right;
 	}
-
+	.who-we-are {
+		margin-left: 30%;
+	  margin-right: 30%;
+	}
 }
 @media screen and (max-width: 1000px)
 {
@@ -167,6 +171,10 @@ body {
 	}
 	.col-right {
 		text-align: center;
+	}
+	.who-we-are {
+		margin-left: 10%;
+	  margin-right: 10%;
 	}
 
 }
