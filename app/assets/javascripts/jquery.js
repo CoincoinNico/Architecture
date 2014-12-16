@@ -1,3 +1,4 @@
+
 /*!
  * jQuery JavaScript Library v1.4.4
  * http://jquery.com/
@@ -165,3 +166,84 @@ e):f.css(e)}};c.fn.extend({position:function(){if(!this[0])return null;var a=thi
 c.css(a,"position")==="static";)a=a.offsetParent;return a})}});c.each(["Left","Top"],function(a,b){var d="scroll"+b;c.fn[d]=function(e){var f=this[0],h;if(!f)return null;if(e!==B)return this.each(function(){if(h=fa(this))h.scrollTo(!a?e:c(h).scrollLeft(),a?e:c(h).scrollTop());else this[d]=e});else return(h=fa(f))?"pageXOffset"in h?h[a?"pageYOffset":"pageXOffset"]:c.support.boxModel&&h.document.documentElement[d]||h.document.body[d]:f[d]}});c.each(["Height","Width"],function(a,b){var d=b.toLowerCase();
 c.fn["inner"+b]=function(){return this[0]?parseFloat(c.css(this[0],d,"padding")):null};c.fn["outer"+b]=function(e){return this[0]?parseFloat(c.css(this[0],d,e?"margin":"border")):null};c.fn[d]=function(e){var f=this[0];if(!f)return e==null?null:this;if(c.isFunction(e))return this.each(function(l){var k=c(this);k[d](e.call(this,l,k[d]()))});if(c.isWindow(f))return f.document.compatMode==="CSS1Compat"&&f.document.documentElement["client"+b]||f.document.body["client"+b];else if(f.nodeType===9)return Math.max(f.documentElement["client"+
 b],f.body["scroll"+b],f.documentElement["scroll"+b],f.body["offset"+b],f.documentElement["offset"+b]);else if(e===B){f=c.css(f,d);var h=parseFloat(f);return c.isNaN(h)?f:h}else return this.css(d,typeof e==="string"?e:e+"px")}})})(window);
+
+
+
+/**
+ * jQuery Once Plugin v1.2
+ * http://plugins.jquery.com/project/once
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+
+(function ($) {
+  var cache = {}, uuid = 0;
+
+  /**
+   * Filters elements by whether they have not yet been processed.
+   *
+   * @param id
+   *   (Optional) If this is a string, then it will be used as the CSS class
+   *   name that is applied to the elements for determining whether it has
+   *   already been processed. The elements will get a class in the form of
+   *   "id-processed".
+   *
+   *   If the id parameter is a function, it will be passed off to the fn
+   *   parameter and the id will become a unique identifier, represented as a
+   *   number.
+   *
+   *   When the id is neither a string or a function, it becomes a unique
+   *   identifier, depicted as a number. The element's class will then be
+   *   represented in the form of "jquery-once-#-processed".
+   *
+   *   Take note that the id must be valid for usage as an element's class name.
+   * @param fn
+   *   (Optional) If given, this function will be called for each element that
+   *   has not yet been processed. The function's return value follows the same
+   *   logic as $.each(). Returning true will continue to the next matched
+   *   element in the set, while returning false will entirely break the
+   *   iteration.
+   */
+  $.fn.once = function (id, fn) {
+    if (typeof id != 'string') {
+      // Generate a numeric ID if the id passed can't be used as a CSS class.
+      if (!(id in cache)) {
+        cache[id] = ++uuid;
+      }
+      // When the fn parameter is not passed, we interpret it from the id.
+      if (!fn) {
+        fn = id;
+      }
+      id = 'jquery-once-' + cache[id];
+    }
+    // Remove elements from the set that have already been processed.
+    var name = id + '-processed';
+    var elements = this.not('.' + name).addClass(name);
+
+    return $.isFunction(fn) ? elements.each(fn) : elements;
+  };
+
+  /**
+   * Filters elements that have been processed once already.
+   *
+   * @param id
+   *   A required string representing the name of the class which should be used
+   *   when filtering the elements. This only filters elements that have already
+   *   been processed by the once function. The id should be the same id that
+   *   was originally passed to the once() function.
+   * @param fn
+   *   (Optional) If given, this function will be called for each element that
+   *   has not yet been processed. The function's return value follows the same
+   *   logic as $.each(). Returning true will continue to the next matched
+   *   element in the set, while returning false will entirely break the
+   *   iteration.
+   */
+  $.fn.removeOnce = function (id, fn) {
+    var name = id + '-processed';
+    var elements = this.filter('.' + name).removeClass(name);
+
+    return $.isFunction(fn) ? elements.each(fn) : elements;
+  };
+})(jQuery);
